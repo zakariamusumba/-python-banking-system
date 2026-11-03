@@ -1,0 +1,29 @@
+from datetime import datetime
+
+
+class Transaction:
+
+    def __init__(self, transaction_type, amount, account_number):
+
+        self.transaction_type = transaction_type
+        self.amount = amount
+        self.account_number = account_number
+        self.date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    def display_transaction(self):
+
+        print("\n===== TRANSACTION DETAILS =====")
+
+        print(f"Transaction Type: {self.transaction_type}")
+        print(f"Amount: Ksh {self.amount}")
+        print(f"Account Number: {self.account_number}")
+        print(f"Date: {self.date}")
+
+    def to_dictionary(self):
+
+        return {
+            "type": self.transaction_type,
+            "amount": self.amount,
+            "account_number": self.account_number,
+            "date": self.date
+        }

@@ -1,0 +1,15 @@
+{
+    "account_holder": "John",
+    "account_number": "1001",
+    "balance": 7000.0,
+    "account_type": "Savings",
+    "pin": "1234",
+    "transactions": [
+        {
+            "type": "Deposit",
+            "amount": 2000.0,
+            "account_number": "1001",
+            "date": "2026-11-03 14:30:00"
+        }
+    ]
+}
